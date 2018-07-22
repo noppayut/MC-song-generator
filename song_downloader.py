@@ -3,9 +3,13 @@ import os
 from bs4 import BeautifulSoup
 import urllib.request
 
+""" ----------------- SET UP ----------------- """
+# no set up needed if no necessary customization
 sitename = "https://www.siamzone.com/music/thailyric/"
+maxno = 14000 #default is fine
+""" ------------------------------------------ """
+
 savepath = os.getcwd()
-maxno = 14000
 
 def get_lyrics(soup):
 	return soup.find(id="lyrics-content").text.replace('\r','').replace('\t','').strip()

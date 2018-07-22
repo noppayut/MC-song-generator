@@ -10,15 +10,17 @@ import json
 import numpy as np
 import deepcut as dc
 
-main_path = "C:\\Users\\noppa\\Desktop\\Free project\\Song generator\\"
-path_to_files = main_path + "test\\"
+""" ----------------- SET UP ----------------- """
+main_path = "[PROJECT_PATH]" + "\\"
+path_to_files = main_path + "[FOLDER_PREPROCESSED_LYRICS]" + "\\"
 path_to_stopword = main_path + "stopwords-th.txt"
 initial_word = "ฉัน"
-song_chunk_names = ['intro', 'body', 'outro']
 bodyratio = 0.7
 illegal_initials = ['ๆ']
 use_pretrained = True
 pretrained_name = "pretrained\\chain-trained.json"
+""" ------------------------------------------ """
+song_chunk_names = ['intro', 'body', 'outro']
 
 class Song:
     def __init__(self, lyricschunks):

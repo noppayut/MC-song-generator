@@ -10,11 +10,14 @@ import deepcut
 import string
 import functools as ft
 
-path_to_files = "C:\\Users\\noppa\\Desktop\\Free project\\Song generator\\raw\\"
-path_to_save = "C:\\Users\\noppa\\Desktop\\Free project\\Song generator\\processed\\"
-words_in_sentence_limit = 5
+""" ----------------- SET UP ----------------- """
+main_path = "[PROJECT_PATH]" + "\\"
+path_to_files = main_path + "[FOLDER_NAME_CONTAINING_RAW_FILES]"
+path_to_save = main_path + "[FOLDER_NAME_FOR_SAVING_PROCESSED_FILES]"
+words_in_sentence_limit = 5 #used for determining sentence breaking
 words_in_double_sentence = 15
 token_type_dict = {'sentence': 's', 'phrase': 'p', 'double sentence': 'd'}
+""" ------------------------------------------ """
 
 class Lyrics:
     def __init__(self, lyrics):        
