@@ -23,7 +23,7 @@ __Note__:
 
 ## Pre-trained model
 Pre-trained model is a json file containing a dictionary that serves as state transition table for `Chain` class in `song_generator.py`.
-The model is located at `\pretrained`.
+The model is located in `\pretrained`.
 
 Always set `use_pretrained` variable in `song_generator.py` `True` if you want to use this option.
 
