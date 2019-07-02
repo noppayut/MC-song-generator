@@ -12,7 +12,7 @@ Parts of the lyrics from each model are combined at the end to make a complete l
 * BeautifulSoup4
 
 ## File descriptions
-* `song_downloader.py` - A script for downloading lyrics from Siamzone.com
+* `song_downloader.py` - A script for downloading (scraping) lyrics from Siamzone.com
 * `preprocessor.py` - A script for preprocessing the downloaded lyrics
 * `song_generator.py` - A lyrics generator.
 
